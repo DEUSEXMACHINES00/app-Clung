@@ -1,0 +1,15 @@
+<div class="container" *ngIf="product" >
+    <div class="image" *ngIf="product.image" >
+        <img src="{{url+'get-image/'+product.image}}" *ngIf="product.image">
+    </div>
+    <div class="data">
+        <h1>Nombre: {{product.name}}</h1>
+        <h3>Codigo: {{product.code}}</h3>
+        <h3>Precio: ${{product.price}}</h3>
+        <h3>Descripcion: {{product.description}}</h3>
+        <p>
+            <a [routerLink]="['/editar-producto',product._id]" class="button-edit">Editar</a>
+            <a (click)="deleteProduct(product._id)" class="button-delete">Borrar</a>
+        </p>
+    </div>
+</div>

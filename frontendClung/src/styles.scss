@@ -1,0 +1,176 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;    
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+/*Barra nav*/
+
+header{
+    display: block;
+    width: 100%;
+    height: 90px;
+    background: rgb(53,103,164,0.8);   
+    text-transform: uppercase;
+}
+header ul{
+    display: block;
+    width: 600px;
+    height: inherit;
+    margin: 0px auto;
+}
+header ul li{
+    display: inline-block;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 90px;    
+}
+header a{
+    display: block;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: inherit;
+    text-decoration: none;
+    color: white;
+    transition: all 300ms;
+}
+header a:hover{
+    background: rgba(0,0,0,0.8);
+    text-decoration: none;
+}
+
+/*Contenido*/
+
+div .container{
+    min-height: 1000px;
+    height: auto;
+    width: 95%;
+    margin: 0px auto; 
+    padding-top: 120px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+.container.image {
+    float: left;
+    width: 45%;
+}
+.container.image img{
+    width: 100%;
+}
+
+/*Pie de pagina*/
+footer{
+    width: 85%;
+    margin: 0px auto;
+    padding-top: 8px;
+    color: rgba(0,0,0,0.8);
+}
+
+/*Formulario*/
+.content{
+    padding-left: 60px;
+}
+.content h2{
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+form{
+    width: 50%;    
+}
+form label{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form textarea{
+    width: 80%;
+    padding: 5pxs;
+}
+
+form button,
+form input[type="submit"],
+.button-edit,
+.button-delete{
+    display: block;
+    font-size: 17px;
+    padding: 10px;
+    margin-top: 15px;
+    color: white;
+    background: green;
+    border: 1px solid rgb(53,103,164,0.8);
+    cursor: pointer;
+}
+.button-edit,
+.button-delete{
+    width: 12%;
+    float :left;
+    margin-right: 10px;
+    text-decoration: none;
+    border: none;
+}
+.button-delete{
+    background: red;
+}
+.button-edit{
+    background: olivedrab;
+}
+
+form button:hover,
+form input[type="submit"]:hover{
+    background: rgba(0,0,0,0.8);
+}
+.message{
+    width: 30%;
+    padding: 5px;
+    border: 1px solid #eee;
+}
+.succes{
+    background: green;
+    color: white;
+}
+.succes a{
+    color: white;
+}
+.failed{
+    background: red;
+    color: white;
+}
+
+/*Pagina de productos*/
+.container{
+    padding: 40px;
+}
+.product{
+    list-style: none;
+    display: block;
+    float: left;
+    width: 27%;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.product image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.product img{    
+    width: 100%;
+}
+.product a{
+    text-decoration: none;
+    color: black;
+}
